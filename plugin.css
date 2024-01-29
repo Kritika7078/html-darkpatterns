@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+body{
+    background-image: url("BG3.jpg");
+}
+
+h1{
+    font-size: 4rem;
+    margin-left: 4rem;
+}
+
+p{
+    margin:4rem;
+}
+
+iframe{
+    margin-left: 4rem;
+
+}
