@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Pattern Reporting System</title>
+  <style>
+    body {
+      background-color: #2b2b2b; /* Dark grey background */
+      color: #ffffff; /* White text */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #reportForm {
+      max-width: 800px;
+      width: 100%;
+      background-color: #1a1a1a; /* Black background */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    h2 {
+      color: #cc0000; /* Red heading */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #ffffff; /* White text */
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #333333; /* Dark grey border */
+      border-radius: 8px;
+      background-color: #4d4d4d; /* Dark grey input background */
+      color: #ffffff; /* White text */
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 15px 30px;
+      background-color: #cc0000; /* Red button */
+      color: #ffffff; /* White text */
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #990000; /* Darker red on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="reportForm">
+    <h2>Dark Pattern Reporting</h2>
+    <form id="darkPatternForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="website">Website with Dark Pattern:</label>
+      <input type="text" id="website" name="website" required>
+
+      <label for="darkPattern">Dark Pattern:</label>
+      <select id="darkPattern" name="darkPattern" required>
+        <option value="" disabled selected>Select a Dark Pattern</option>
+        <option value="misdirection">Misdirection</option>
+        <option value="forcedAction">Forced Action</option>
+        <option value="sneakIntoBasket">Sneak Into Basket</option>
+        <option value="hiddenCosts">Hidden Costs</option>
+        <option value="urgentCallToAction">Urgent Call to Action</option>
+        <option value="confirmshaming">Confirmshaming</option>
+        <option value="roachMotel">Roach Motel</option>
+        <option value="friendSPAM">Friend SPAM</option>
+        <option value="baitAndSwitch">Bait and Switch</option>
+        <option value="disguisedAds">Disguised Ads</option>
+      </select>
+
+      <label for="encounterLocation">Where did you encounter this dark pattern?</label>
+      <input type="text" id="encounterLocation" name="encounterLocation" required>
+
+      <label for="impactLevel">How much did this dark pattern impact you?</label>
+      <select id="impactLevel" name="impactLevel" required>
+        <option value="" disabled selected>Select Impact Level</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="experienceNote">Describe your experience:</label>
+      <textarea id="experienceNote" name="experienceNote" rows="6" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      // Add your form submission logic here
+      alert("Form submitted successfully!"); // Placeholder for demonstration
+    }
+  </script>
+
+</body>
+</html>
